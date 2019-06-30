@@ -9,7 +9,7 @@
 .classy-nav-container {
   position: relative;
   z-index: 1;
-  background-color: #ffffff; }
+  background-color: #0b1c33c4; }
   .classy-nav-container * {
     box-sizing: border-box; }
   .classy-nav-container a {
@@ -207,7 +207,7 @@
   width: 100%;
   left: 0;
   top: 100%;
-  background-color: #ffffff;
+  background-color: #0b1c33c4;
   z-index: 200;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
   .classynav ul li .megamenu .single-mega.cn-col-5 {
@@ -280,7 +280,7 @@
 .breakpoint-off .classynav ul li .dropdown {
   width: 180px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #0b1c33c4;
   top: 120%;
   left: 0;
   z-index: 100;
@@ -331,7 +331,7 @@
   width: 100%;
   left: 0;
   top: 120%;
-  background-color: #ffffff;
+  background-color: #0b1c33c4;
   z-index: 200;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition-duration: 300ms;
@@ -347,7 +347,7 @@
 .breakpoint-on .classy-navbar-toggler {
   display: block; }
 .breakpoint-on .classy-navbar .classy-menu {
-  background-color: #ffffff;
+  background-color: #0b1c33c4;
   position: fixed;
   top: 0;
   left: -340px;
@@ -432,9 +432,6 @@
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #f2f4f8; }
-.breakpoint-on .classynav > ul > li > a {
-  background-color: #f2f4f8;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 .breakpoint-on .classynav ul li ul.dropdown li ul li {
   margin-left: 15px; }
 .breakpoint-on .classynav ul li.megamenu-item > a::after,
