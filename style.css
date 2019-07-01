@@ -376,6 +376,10 @@ input:required {
   padding-top: 50px !important;
 }
 
+.section-padding-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .section-padding-80 {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2200,10 +2204,10 @@ input:required {
   transition-duration: 500ms;
 }
 
-.single-blog-area .single-blog-text .blog-title:hover,
+/* .single-blog-area .single-blog-text .blog-title:hover,
 .single-blog-area .single-blog-text .blog-title:focus {
   color: #48C5BF;
-}
+} */
 
 .single-blog-area .single-blog-text .post-meta {
   margin-bottom: 15px;
@@ -3364,23 +3368,25 @@ input:required {
   border-radius: 50%;
 }
 
-.single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i{
+.single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i {
   font-size: 70px;
   color: white;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i{
+  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i {
     font-size: 60px;
   }
 }
+
 @media only screen and (min-width: 446px) and (max-width: 767px) {
-  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i{
+  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i {
     font-size: 70px;
   }
 }
 
 @media only screen and (max-width: 445px) {
-  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i{
+  .single-schedule-area .single-schedule-tumb-info .single-schedule-tumb i {
     font-size: 20vw;
   }
 }
@@ -3396,6 +3402,10 @@ input:required {
   font-weight: 600;
 }
 
+.single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 span {
+  font-weight: 400;
+  font-style: italic;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
@@ -3420,7 +3430,7 @@ input:required {
   margin-bottom: 0;
 }
 
-.single-schedule-area .single-schedule-tumb-info .single-schedule-info p i{
+.single-schedule-area .single-schedule-tumb-info .single-schedule-info p i {
   color: #48C5BF;
 }
 
@@ -3579,6 +3589,32 @@ input:required {
   margin-left: -30px;
 }
 
+/* .our-ticket-pricing-table-area .venue-info{
+  background: url("img/bg-img/iiitd.jpg") top center no-repeat;
+  background-size: cover;
+  background-color: rgba(9, 14, 29, 0.8); 
+  background-blend-mode: multiply;
+} */
+
+
+.our-ticket-pricing-table-area .venue-info h3{
+  /* font-size: 40px; */
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.our-ticket-pricing-table-area .venue-info p{
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.our-ticket-pricing-table-area .venue-map iframe{
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .our-ticket-pricing-table-area .row {
     margin-left: -15px;
@@ -3600,27 +3636,27 @@ input:required {
   }
 }
 
-.our-ticket-pricing-table-area .row .col-12 {
+.our-ticket-pricing-table-area .row .venue-info {
   padding-left: 30px;
   padding-right: 30px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .our-ticket-pricing-table-area .row .col-12 {
+  .our-ticket-pricing-table-area .row .venue-info {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .our-ticket-pricing-table-area .row .col-12 {
+  .our-ticket-pricing-table-area .row .venue-info {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .our-ticket-pricing-table-area .row .col-12 {
+  .our-ticket-pricing-table-area .row .venue-info {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -3771,6 +3807,8 @@ input:required {
   transition-duration: 300ms;
   max-height: 110px;
   opacity: 0.5;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
