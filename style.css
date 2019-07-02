@@ -50,6 +50,10 @@ Last Update: March 14, 2019
   padding: 0;
 }
 
+/* html{
+  scroll-behavior: smooth;
+} */
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -903,7 +907,7 @@ input:required {
   /* text-transform: uppercase; */
   color: #ffffff;
   font-weight: 500;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .classy-nav-container .classy-navbar .classynav ul li a:hover,
@@ -920,7 +924,7 @@ input:required {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #0B1C33;
+    /* color: #0B1C33; */
   }
 
   .classy-nav-container .classy-navbar .classynav ul li a:hover,
@@ -932,7 +936,6 @@ input:required {
 @media only screen and (max-width: 767px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #0B1C33;
   }
 
   .classy-nav-container .classy-navbar .classynav ul li a:hover,
@@ -948,7 +951,7 @@ input:required {
   height: 42px;
   line-height: 42px;
   padding: 0 30px;
-  color: #0B1C33;
+  /* color: #0B1C33; */
 }
 
 .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus,
@@ -1152,7 +1155,7 @@ input:required {
   z-index: 2;
   width: 100%;
   height: 100vh !important;
-  background-color: #9F3868;
+  background-color: #000000;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1295,7 +1298,12 @@ input:required {
   /* text-transform: uppercase; */
   font-weight: 600;
 }
-
+.single-welcome-slide .welcome-text-two span{
+  background: linear-gradient(to right, #9A3D72 0%, #228BC4 58%,#2FA9AB 80%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide .welcome-text-two h2 {
     font-size: 62px;
@@ -3203,6 +3211,7 @@ input:required {
 .single-client-content .client-icon {
   background: #9F3868;
   background: -moz-linear-gradient(120deg, #9F3868 0%, #48C5BF 100%);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.7;
