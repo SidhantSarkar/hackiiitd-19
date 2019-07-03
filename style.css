@@ -3267,32 +3267,32 @@ input:required {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-    font-size: 14px;
+    font-size: 100%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-    font-size: 10px;
+    font-size: 100%;
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-    font-size: 12px;
+    font-size: 100%;
     padding: 15px 20px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-    font-size: 14px;
+    font-size: 100%;
   }
 }
 
 .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
-  font-size: 14px;
+  font-size: 90%;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: capitalize;
@@ -3300,13 +3300,13 @@ input:required {
 
 @media only screen and (max-width: 767px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
-    font-size: 9px;
+    font-size: 90%;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link span {
-    font-size: 10px;
+    font-size: 90%;
   }
 }
 
@@ -3408,7 +3408,7 @@ input:required {
 }
 
 .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
-  font-size: 20px;
+  font-size: 150%;
   color: #ffffff;
   font-weight: 600;
 }
@@ -3418,9 +3418,9 @@ input:required {
   font-style: italic;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
-    font-size: 16px;
+    font-size: 30px;
   }
 }
 
@@ -3434,17 +3434,18 @@ input:required {
   .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
     font-size: 14px;
   }
-}
+} */
 
 .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
   color: #ffffff;
   margin-bottom: 0;
+  font-size: 100%;
 }
 
 .single-schedule-area .single-schedule-tumb-info .single-schedule-info p i {
   color: #48C5BF;
 }
-
+/* 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
     font-size: 12px;
@@ -3456,12 +3457,12 @@ input:required {
     font-size: 12px;
   }
 }
-
+*/
 @media only screen and (max-width: 767px) {
   .single-schedule-area .single-schedule-tumb-info .single-schedule-info p {
-    font-size: 12px;
+    font-size: 80%;
   }
-}
+} 
 
 .single-schedule-area .single-schedule-tumb-info .single-schedule-info p span {
   color: #ffffff;
@@ -3469,20 +3470,20 @@ input:required {
 
 .single-schedule-area .schedule-time-place {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 42%;
-  flex: 0 0 42%;
-  max-width: 42%;
-  width: 42%;
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  max-width: 55%;
+  width: 55%;
   padding: 0 15px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-schedule-area .schedule-time-place {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 35%;
-    flex: 0 0 35%;
-    max-width: 35%;
-    width: 35%;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+    width: 60%;
   }
 }
 
@@ -3501,9 +3502,10 @@ input:required {
   color: #ffffff;
   margin-bottom: 0;
   letter-spacing: 1px;
+  font-size: 100%;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-schedule-area .schedule-time-place p {
     font-size: 12px;
   }
@@ -3519,7 +3521,7 @@ input:required {
   .single-schedule-area .schedule-time-place p {
     font-size: 12px;
   }
-}
+} */
 
 .single-schedule-area .schedule-time-place p i {
   color: #48C5BF;
