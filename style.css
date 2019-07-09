@@ -3853,7 +3853,7 @@ input:required {
 .contact-our-area {
   position: relative;
   z-index: 1;
-  background-color: #0B1C33;
+  background-color: blueviolet;
 }
 
 .contact-our-area .contact-information .single-contact-info {
