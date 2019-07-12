@@ -3782,6 +3782,7 @@ input:required {
   z-index: 1;
   width: 100%;
   background-color: #ffffff;
+  margin: 0 0 0 0;
 }
 
 .our-sponsor-area .single-sponsor {
@@ -3802,8 +3803,8 @@ input:required {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: -1px;
-  margin-top: -1px;
+  /* margin-left: -1px;
+  margin-top: -1px; */
   background-color: #ffffff;
 }
 
