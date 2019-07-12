@@ -1393,6 +1393,10 @@ input:required {
   color: #9293bc;
   font-size: 14px;
 }
+.main-footer-area .single-footer-widget p a{
+  color: #9293bc;
+  font-size: 14px;
+}
 
 .main-footer-area .single-footer-widget p i {
   margin-right: 5px;
