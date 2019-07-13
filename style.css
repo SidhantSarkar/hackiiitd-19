@@ -3859,7 +3859,7 @@ input:required {
 .contact-our-area {
   position: relative;
   z-index: 1;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   padding-bottom: 5%;
 }
 
@@ -3867,14 +3867,14 @@ input:required {
 .single-contact-area {
   position: relative;
   z-index: 1;
-  margin-bottom: 10%;
-  /* margin: 10px 10px 10px 10px; */
+  /* margin-bottom: 10%; */
+  margin: 10px 10px 10px 10px;
 }
 
 .single-contact-area .single-contact-thumb {
   /* border-radius: 10px 10px 0 0; */
   overflow: hidden;
-  /* width: 20%;   */
+  width: 30%;  
   height: 100%;
   /* float: left; */
 }
@@ -3885,6 +3885,7 @@ input:required {
   -webkit-transition-duration: 800ms;
   -o-transition-duration: 800ms;
   transition-duration: 800ms;
+  object-fit: fill;
 }
 
 .single-contact-area .single-contact-text {
@@ -3893,6 +3894,7 @@ input:required {
   border-radius: 0 10px 10px 0;
   width: 70%;
   height: 100%;
+  /* display: flex; */
   /* float: right; */
 }
 
@@ -3900,7 +3902,7 @@ input:required {
   /* font-size: 20px; */
   font-weight: 600;
   color: #0B1C33;
-  /* margin-bottom: 5px; */
+  margin-bottom: 5px;
   display: inline-block;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
@@ -4032,5 +4034,75 @@ input:required {
 .call-to-action-content .event-time p i {
   margin-right: 3px;
 }
+
+.faq-area {
+  position: relative;
+  z-index: 1;
+  background-color: #0B1C33;
+  padding-bottom: 5%;
+}
+
+
+
+/* .faq .faq-ul {
+  padding: 0;
+  list-style: none;
+} */
+
+.faq-area ul li{
+
+  padding-bottom: 20px;
+}
+
+.faq-area .faq-ul i {
+  /* font-size: 24px; */
+  position: absolute;
+  right: 4vw;
+  /* top: 16px; */
+}
+.faq-area ul li a{
+  color: #48C5BF;
+}
+
+.faq-area ul li a.collapsed {
+  color: #ffffff;
+}
+
+.faq-area .faq-ul li .faq-ans {
+  padding-top: 18px;
+}
+/*
+#faq #faq-list li {
+  border-bottom: 1px solid #ddd;
+}
+
+#faq #faq-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+
+
+#faq #faq-list p {
+  margin-bottom: 20px;
+}
+
+#faq #faq-list a.collapse {
+  color: #f82249;
+}
+
+#faq #faq-list a.collapsed {
+  color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+  content: "\f055" !important;
+} */
 
 /*# sourceMappingURL=style.css.map */
