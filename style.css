@@ -4067,10 +4067,10 @@ input:required {
 .faq-area ul li a.collapsed {
   color: #ffffff;
 }
-
-.faq-area .faq-ul li .faq-ans {
-  padding-top: 18px;
+.faq-area ul li a.collapsed i::before {
+  content: "\f276" !important;
 }
+
 /*
 #faq #faq-list li {
   border-bottom: 1px solid #ddd;
