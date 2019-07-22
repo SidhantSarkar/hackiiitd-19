@@ -474,7 +474,7 @@
 }
 
 .breakpoint-on .classy-navbar .classy-menu {
-  background-color: #0b1c33c4;
+  background-color: #071221fc;
   position: fixed;
   top: 0;
   left: -340px;
@@ -487,7 +487,7 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   display: block;
   overflow-x: hidden;
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 .breakpoint-on .classy-navbar .classy-menu.menu-on {
