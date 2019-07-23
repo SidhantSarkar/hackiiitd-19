@@ -664,6 +664,7 @@ input:required {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   overflow: hidden;
+  cursor: default;
 }
 
 .confer-btn i {
