@@ -40,44 +40,7 @@
 </head>
 
 <body>
-    <!-- Devfolio CSS -->
-    <style type="text/css">
-        #devfolio-apply-now {
-                -ms-flex-align: center;
-                -webkit-box-align: center;
-                align-items: center;
-                background-color: #3770FF;
-                border-radius: 3px;
-                border: none;
-                color: #FFFFFF;
-                cursor: pointer;
-                display: -ms-flexbox;
-                display: -webkit-box;
-                display: flex;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-                 'Segoe UI Emoji', 'Segoe UI Symbol';
-                font-size: 18px;
-                font-weight: 600;
-                padding: 12px 20px;
-                text-align: center;
-                text-transform: none;
-                text-align: center;
-                display: inline-block;
-                /*background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
-            }
-            #devfolio-apply-now:not([disabled]) {
-                cursor: pointer;
-            }
-            #devfolio-apply-now:hover {
-                background-color: #2954BF !important;
-            }
-            #devfolio-apply-now .logo {
-                /* Please keep the color of Devfolio logo mark either whit
-                e (#FFFFFF) or black (#000000) */
-                fill: white;
-            }
-
-    </style>
+    
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -100,7 +63,7 @@
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
                     <style type="text/css">
-                        @media only screen and (max-width: 991px){
+                        @media only screen and (max-width: 991px) {
                             .classy-nav-container .classy-navbar .classynav ul li a {
                                 font-size: 18px;
                             }
@@ -133,10 +96,10 @@
                                 <li><a href="#schedule">Schedule</a></li>
                                 <li><a href="#venue">Venue</a></li>
                                 <li><a href="#sponsors">Sponsors</a></li>
+                                <li><a href="#prizes">Prizes</a></li>
                                 <li><a href="#mentors">Mentors</a></li>
                                 <li><a href="#faq">FAQ</a></li>
                                 <li><a href="#contact">Contact</a></li>
-                                <li><a href="#register">Register</a></li>
                                 <!-- <li><a href="#contact">Contact</a></li> -->
                             </ul>
                         </div>
@@ -173,15 +136,16 @@
                                 <!-- <a href="#register" class="btn confer-btn m-2">Register <i
                                         class="zmdi zmdi-long-arrow-right"></i></a> -->
                                 <button id="devfolio-apply-now">
-                                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px">
-                                            <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 1
+                                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46"
+                                        style="height:24px;width:24px;margin-right:8px">
+                                        <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 1
                                             3.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05
-                                            1.05.08 2.18.08 3.34z"/>
-                                            <path d="M110.93 55.87A55.43 55.43 0 0
+                                            1.05.08 2.18.08 3.34z" />
+                                        <path d="M110.93 55.87A55.43 55.43 0 0
                                             1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-
                                             83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 5
-                                            5.41 0 0 1 50.58 55.34z"/>
-                                        </svg>\
+                                            5.41 0 0 1 50.58 55.34z" />
+                                    </svg>\
                                     Apply with Devfolio
                                 </button>
 
@@ -1030,11 +994,13 @@
             <!-- Our Sponsor Row -->
             <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
                 <!-- Tier 1 Sponsor -->
-                <div style="padding:60px"class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp"
+                    data-wow-delay="300ms">
                     <a href="https://www.linode.com/"><img src="img/sponsors/linode.png" alt=""></a>
                 </div>
                 <!-- Tier 1 Sponsor -->
-                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp"
+                    data-wow-delay="300ms">
                     <a href="https://www.devfolio.co/"><img src="img/sponsors/devfolio.PNG" alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
@@ -1043,8 +1009,7 @@
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://get.tech/"><img src="img/sponsors/dot_tech.png"
-                            alt=""></a>
+                    <a href="https://get.tech/"><img src="img/sponsors/dot_tech.png" alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
@@ -1058,7 +1023,7 @@
 
             <!-- Our Sponsor Row -->
             <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
-                
+
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
                     <a href="http://www.wolfram.com/"><img src="img/sponsors/wolfram.png" alt=""></a>
@@ -1081,13 +1046,177 @@
 
             <!-- Our Sponsor Row -->
             <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
-                
+
                 <!-- Single Sponsor -->
-                
+
             </div>
         </div>
     </section>
     <!-- Our Sponsor And Client Area End -->
+
+    <!-- Our Prizes Area Start -->
+    <section id="prizes" class="our-speaker-area section-padding-100-60" style="background-color: #0B1C33">
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+                        <!-- <p>Worth upto xxxx</p> -->
+                        <h4>Prizes</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center wow fadeInUp" data-wow-delay="300ms">
+                        <h5 style="color: #9F3869">To be announced</h5>
+                    </div>
+                </div>
+            </div>
+            <!--                 
+            <div class="row">
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/4.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Albert Barnes</h5>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/5.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Patricia Stanley</h5>
+                            <p>Product Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/6.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Evelyn Stone</h5>
+                            <p>Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/7.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Evelyn Stone</h5>
+                            <p>Photographer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/8.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Susan Hopkins</h5>
+                            <p>UX Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/bg-img/9.jpg" alt="">
+                        </div>
+                        <!- - Social Info - ->
+                        <div class="social-info">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Michael Fowler</h5>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Our Prizes Area End -->
 
     <!-- Our Blog Area Start -->
     <section id="mentors" class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60"
@@ -1171,7 +1300,7 @@
                                 criteria?<i class="zmdi zmdi-minus-circle"></i></a>
                             <div id="faq1" class="collapse faq-ans" data-parent="#faq-list">
                                 <p>A team should consist of undergraduates and/or school students from grades 11th/12th.
-                                    At most 4 members are allowed in a team. Lone wolves are welcome too.</p>
+                                    Each team should consist of at least 2 and at most 4 members.</p>
                             </div>
                         </li>
                         <li> <a data-toggle="collapse" href="#faq2" class="collapsed faq-li">How much is the cost for
@@ -1196,7 +1325,8 @@
     <!-- FAQ Area End -->
 
     <!-- Contact Area Start -->
-    <section id="contact" class="contact-our-area bg-img bg-gradient-overlay section-padding-100-0" style="background-image: url(img/bg-img/27.jpg);">
+    <section id="contact" class="contact-our-area bg-img bg-gradient-overlay section-padding-100-0"
+        style="background-image: url(img/bg-img/27.jpg);">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
@@ -1210,26 +1340,29 @@
             <!-- CONTACT US FIX BY ABHIMANYU DO NOT CHANGE-->
             <style type="text/css">
                 /*Between 1200px and 768px*/
-                @media screen and (max-width: 1200px) and (min-width: 768px){
-                    .p-2>p{
+                @media screen and (max-width: 1200px) and (min-width: 768px) {
+                    .p-2>p {
                         font-size: 12px
                     }
                 }
+
                 /*Less than 380px*/
-                @media screen and (max-width:380px){
-                    .p-2>p{
+                @media screen and (max-width:380px) {
+                    .p-2>p {
                         font-size: 12px
                     }
                 }
+
                 /*Less than 320px*/
-                @media screen and (max-width: 320px){
-                    .p-2>p{
+                @media screen and (max-width: 320px) {
+                    .p-2>p {
                         font-size: 10px
                     }
                 }
-                .p-2>p>a{
-                        color: inherit;
-                        font-weight: inherit;
+
+                .p-2>p>a {
+                    color: inherit;
+                    font-weight: inherit;
                 }
             </style>
             <div class="row">
@@ -1389,8 +1522,9 @@
                                 <a href="https://esya.iiitd.edu.in/"><i class="zmdi zmdi-globe-alt"></i></a>
                             </div>
                             <p class="pp-coc"><a href="Privacy_Policy.pdf" target="_blank">Privacy Policy</a> | <a
-                                    href="Code_of_Conduct.pdf" target="_blank">Code of Conduct</a> | 
-                                <a href="https://devfolio.co/code-of-conduct" target="_blank">Devfolio Code of Conduct</a></p>
+                                    href="Code_of_Conduct.pdf" target="_blank">Code of Conduct</a> |
+                                <a href="https://devfolio.co/code-of-conduct" target="_blank">Devfolio Code of
+                                    Conduct</a></p>
                         </div>
                     </div>
 
@@ -1466,8 +1600,8 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             let devfolioOptions = {
-            buttonSelector: '#devfolio-apply-now',
-            key: 'myhackathonkey',
+                buttonSelector: '#devfolio-apply-now',
+                key: 'myhackathonkey',
             }
             let script = document.createElement('script');
             script.src = "https://apply.devfolio.co";
@@ -1476,12 +1610,13 @@
                 new Devfolio(devfolioOptions);
             }
             script.onerror = function () {
-                document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-                    window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+                document.querySelector(devfolioOptions.buttonSelector).addEventListener('click',
+            function () {
+                    window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions
+                        .key;
                 });
             }
         });
-
     </script>
 
 </body>
