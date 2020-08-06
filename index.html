@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- First thing in the head tag, Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144567965-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-144567965-1');
+    </script>
+    <!-- Lazy Loading Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -33,13 +44,22 @@
     <link rel="icon" href="./img/core-img/favicon.png">
     <link rel="apple-touch-icon" href="img/core-img/apple-touch-icon.png">
 
-    <!-- Stylesheet -->
+    <!-- Stylesheets and fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Poppins:100,200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/default-assets/classy-nav.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader"></div>
@@ -61,7 +81,13 @@
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
-
+                    <style type="text/css">
+                        @media only screen and (max-width: 991px) {
+                            .classy-nav-container .classy-navbar .classynav ul li a {
+                                font-size: 18px;
+                            }
+                        }
+                    </style>
                     <!-- Menu -->
                     <div class="classy-menu">
                         <!-- Menu Close Button -->
@@ -71,29 +97,16 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul id="nav">
-                                <!-- <li class="active"><a href="#intro">Home</a></li> -->
-                                <!-- <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">- Home</a></li>
-                                        <li><a href="about.html">- About Us</a></li>
-                                        <li><a href="speakers.html">- Speakears</a></li>
-                                        <li><a href="schedule.html">- Schedule</a></li>
-                                        <li><a href="tickets.html">- Tickets</a></li>
-                                        <li><a href="blog.html">- Blog</a></li>
-                                        <li><a href="single-blog.html">- Single Blog</a></li>
-                                        <li><a href="contact.html">- Contact</a></li>
-                                    </ul>
                                 </li> -->
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#judges">Judges</a></li>
                                 <li><a href="#schedule">Schedule</a></li>
                                 <li><a href="#venue">Venue</a></li>
                                 <li><a href="#sponsors">Sponsors</a></li>
+                                <li><a href="#prizes">Prizes</a></li>
                                 <li><a href="#mentors">Mentors</a></li>
                                 <li><a href="#faq">FAQ</a></li>
                                 <li><a href="#contact">Contact</a></li>
-                                <li><a href="#register">Register</a></li>
-                                <!-- <li><a href="#contact">Contact</a></li> -->
                             </ul>
                         </div>
                         <!-- Nav End -->
@@ -125,9 +138,18 @@
                                 <a class="event-location" href="#venue"><i class="zmdi zmdi-pin"></i>IIIT Delhi</a>
                             </div>
                             <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                <!-- <a href="#" class="btn confer-btn m-2">View more <i class="zmdi zmdi-long-arrow-right"></i></a> -->
-                                <a href="#" class="btn confer-btn m-2">Register <i
-                                        class="zmdi zmdi-long-arrow-right"></i></a>
+                                <button id="devfolio-apply-now">
+                                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46"
+                                        style="height:24px;width:24px;margin-right:8px">
+                                        <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 1 3.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 .05 1.05.08 2.18.08 3.34z" />
+                                        <path d="M110.93 55.87A55.43 55.43 0 0
+                                            1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-
+                                            83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 5
+                                            5.41 0 0 1 50.58 55.34z" />
+                                    </svg>
+                                    Apply with Devfolio
+                                </button>
+
                             </div>
                         </div>
                     </div>
@@ -164,13 +186,6 @@
                         <p class="wow fadeInUp" data-wow-delay="300ms">23-24 August 2019</p>
                     </div>
                 </div>
-
-                <!-- About Thumb -->
-                <!-- <div class="col-12 col-md-6">
-                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/2.png" alt="">
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -210,154 +225,49 @@
                     </div>
                 </div>
             </div>
+                            
             <div class="row">
-                <div class="col-12">
-                    <div class="text-center wow fadeInUp" data-wow-delay="300ms">
-                        <h5>To be announced</h5>
+                <!- - Single Speaker Area - ->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/judges/anant.jpg" alt="">
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Anant Sharma</h5>
+                            <p>Founder of a motion capture suit startup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/judges/srishti.jpg" alt="">
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Srishti Mittal</h5>
+                            <p>CEO and Founder, Impactall - and educational technology company that uses VR and AI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                        <!- - Thumb - ->
+                        <div class="speaker-single-thumb">
+                            <img src="img/judges/ananya.jpg" alt="">
+                        </div>
+                        <!- - Info - ->
+                        <div class="speaker-info">
+                            <h5>Ananya Naithani</h5>
+                            <p>Maths/linguistis enthusiast working as a Quants analyst with Barclays</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--                 
-            <div class="row">
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/4.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Albert Barnes</h5>
-                            <p>Founder</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/5.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Patricia Stanley</h5>
-                            <p>Product Lead</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/6.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Evelyn Stone</h5>
-                            <p>Photographer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/7.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Evelyn Stone</h5>
-                            <p>Photographer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/8.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Susan Hopkins</h5>
-                            <p>UX Manager</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Speaker Area - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!- - Thumb - ->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!- - Social Info - ->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!- - Info - ->
-                        <div class="speaker-info">
-                            <h5>Michael Fowler</h5>
-                            <p>Product Design</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                        <a class="btn confer-btn-white" href="#">view all Speaker <i class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </section>
     <!-- Our Speakings Area End -->
@@ -370,7 +280,7 @@
                 <div class="col-12">
                     <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
                         <p>Our Timetable</p>
-                        <h4>Schedule Plan</h4>
+                        <h4>Tentative Schedule</h4>
                     </div>
                 </div>
             </div>
@@ -422,15 +332,13 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Registration</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 09:00 - 11:30</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 11:30 - 12:30</p>
                                                     <!-- <p>by <span>Gary Armstrong</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
                                             <!-- Single Schedule Info -->
                                             <div class="schedule-time-place">
-                                                <p>On-site registration for the qualified teams where each team will be
-                                                    given a unique ID on the HackIIITD Web App for future
-                                                    identification.</p>
+                                                <p>On-site registration for the qualified teams, attendance will be marked here.</p>
                                                 <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
                                             </div>
                                             <!-- Schedule Btn -->
@@ -451,13 +359,13 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Event Opening</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 12:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 13:30-15:30</p>
                                                     <!-- <p>by <span>Amanda Hudson</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
                                             <!-- Single Schedule Info -->
                                             <div class="schedule-time-place">
-                                                <p>Introduction to organisers, mentors, judges and the Hack Web App.</p>
+                                                <p>Introduction to organisers, mentors, judges and discussing event details.</p>
                                                 <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
                                             </div>
                                             <!-- Schedule Btn -->
@@ -465,30 +373,7 @@
                                         </div>
 
                                         <!-- Single Schedule Area -->
-                                        <div class="single-schedule-area d-flex flex-wrap justify-content-between align-items-center wow fadeInUp"
-                                            data-wow-delay="300ms">
-                                            <!-- Single Schedule Thumb and Info -->
-                                            <div class="single-schedule-tumb-info d-flex align-items-center">
-                                                <!-- Single Schedule Thumb -->
-                                                <div class="single-schedule-tumb">
-                                                    <!-- <img src="img/bg-img/12.jpg" alt=""> -->
-                                                    <i class="material-icons">fastfood</i>
-                                                </div>
-                                                <!-- Single Schedule Info -->
-                                                <div class="single-schedule-info">
-                                                    <h6>Lunch</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 13:00 - 14:00</p>
-                                                    <!-- <p>by <span>Martha Burke</span> / Ceo of Confer</p> -->
-                                                </div>
-                                            </div>
-                                            <!-- Single Schedule Info -->
-                                            <div class="schedule-time-place">
-                                                <p>Lunch by catering services.</p>
-                                                <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
-                                            </div>
-                                            <!-- Schedule Btn -->
-                                            <!-- <a href="#" class="btn confer-btn">View More <i class="zmdi zmdi-long-arrow-right"></i></a> -->
-                                        </div>
+                                        <!-- LUNCH REM0VED -->
 
                                         <!-- Single Schedule Area -->
                                         <div class="single-schedule-area d-flex flex-wrap justify-content-between align-items-center wow fadeInUp"
@@ -503,7 +388,7 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Hack Begins</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 14:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 16:00</p>
                                                     <!-- <p>by <span>Jeffrey Morales</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -529,7 +414,7 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Idea Submission</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 15:00 - 16:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i>18:00</p>
                                                     <!-- <p>by <span>Martha Burke</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -556,7 +441,7 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Dinner</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 20:00-21:30</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 21:00-22:00</p>
                                                     <!-- <p>by <span>Martha Burke</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -590,7 +475,7 @@
                                             <div class="schedule-time-place">
                                                 <p>Participants will be required to present the progress on their final
                                                     application and how/what they plan to do for the rest of the
-                                                    remaining time. Top 40 teams will qualify for the next round of
+                                                    remaining time. Top 25 teams will qualify for the next round of
                                                     evaluation.</p>
                                                 <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
                                             </div>
@@ -617,7 +502,7 @@
                                             </div>
                                             <!-- Single Schedule Info -->
                                             <div class="schedule-time-place">
-                                                <p>Participants can use the Hack Web App and enqueue the songs on their
+                                                <p>Participants can enqueue the songs on their
                                                     room’s playlist. The music will be played on the speakers in the
                                                     room.</p>
                                                 <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
@@ -632,7 +517,7 @@
                                     <div class="col-12">
                                         <div class="more-schedule-btn text-center mt-50 wow fadeInUp"
                                             data-wow-delay="300ms">
-                                            <a href="#" class="btn confer-gb-btn">Download schedule (PDF)</a>
+                                            <a href="HackIIITD_Tentative_Schedule.pdf" target="_blank" class="btn confer-gb-btn">Download schedule (PDF)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -683,7 +568,7 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Evaluation <span>Round 2</span></h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 09:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 09:30</p>
                                                     <!-- <p>by <span>Martha Burke</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -733,12 +618,37 @@
                                                 <!-- Single Schedule Thumb -->
                                                 <div class="single-schedule-tumb">
                                                     <!-- <img src="img/bg-img/13.jpg" alt=""> -->
+                                                    <i class="material-icons">local_dining</i>
+                                                </div>
+                                                <!-- Single Schedule Info -->
+                                                <div class="single-schedule-info">
+                                                    <h6>Lunch</h6>
+                                                    <p><i class="zmdi zmdi-time"></i> 13:30</p>
+                                                    <!-- <p>by <span>Jeffrey Morales</span> / Ceo of Confer</p> -->
+                                                </div>
+                                            </div>
+                                            <!-- Single Schedule Info -->
+                                            <div class="schedule-time-place">
+                                                <p>Lunch by catering services/campus mess.</p>
+                                                <!-- <p><i class="zmdi zmdi-map"></i> Mountain Resort, Phoenix, USA</p> -->
+                                            </div>
+                                            <!-- Schedule Btn -->
+                                            <!-- <a href="#" class="btn confer-btn">View More <i class="zmdi zmdi-long-arrow-right"></i></a> -->
+                                        </div>
+                                        <!-- Single Schedule Area -->
+                                        <div class="single-schedule-area d-flex flex-wrap justify-content-between align-items-center wow fadeInUp"
+                                            data-wow-delay="300ms">
+                                            <!-- Single Schedule Thumb and Info -->
+                                            <div class="single-schedule-tumb-info d-flex align-items-center">
+                                                <!-- Single Schedule Thumb -->
+                                                <div class="single-schedule-tumb">
+                                                    <!-- <img src="img/bg-img/13.jpg" alt=""> -->
                                                     <i class="material-icons">navigations</i>
                                                 </div>
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Final Pitch</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 14:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 14:30</p>
                                                     <!-- <p>by <span>Jeffrey Morales</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -765,7 +675,7 @@
                                                 <!-- Single Schedule Info -->
                                                 <div class="single-schedule-info">
                                                     <h6>Announcing Winners</h6>
-                                                    <p><i class="zmdi zmdi-time"></i> 16:00 - 17:00</p>
+                                                    <p><i class="zmdi zmdi-time"></i> 16:00 - 17:30</p>
                                                     <!-- <p>by <span>Jeffrey Morales</span> / Ceo of Confer</p> -->
                                                 </div>
                                             </div>
@@ -879,8 +789,9 @@
 
             <div class="row">
                 <div class="col-12 col-md-6 venue-map">
-                    <iframe width="600" height="500" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=IIITD%20okhla&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    <!-- <img class="lozad" data-src="https://maps.google.com/maps?q=IIITD%20okhla&t=&z=13&ie=UTF8&iwloc=&output=embed"> -->
+                    <iframe class="lozad" width="600" height="500" id="gmap_canvas"
+                        data-src="https://maps.google.com/maps?q=IIITD%20okhla&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
                 <!-- For turning on IIITD Background for this div go to .venue-info in style.css  -->
@@ -890,68 +801,6 @@
                         <br>(Near Govind Puri Metro Station)
                         <br>New Delhi, India - 110020</p>
                 </div>
-                <!-- <!- - Single Ticket Pricing Table - ->
-                <div class="col-12 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">1 day pass</h6>
-                        <!- - Ticket Icon - ->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p1.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>59</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!- - Ticket Pricing Table Details - ->
-                        <div class="ticket-pricing-table-details">
-                            <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-                            <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-                            <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-                            <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-                            <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Ticket Pricing Table - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table active text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Full pass</h6>
-                        <!- - Ticket Icon - ->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p2.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>99</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!- - Ticket Pricing Table Details - ->
-                        <div class="ticket-pricing-table-details">
-                            <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-                            <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-                            <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-                            <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-                            <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!- - Single Ticket Pricing Table - ->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-                        <h6 class="ticket-plan">Group pass</h6>
-                        <!- - Ticket Icon - ->
-                        <div class="ticket-icon">
-                            <img src="img/core-img/p3.png" alt="">
-                        </div>
-                        <h2 class="ticket-price"><span>$</span>199</h2>
-                        <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                        <!- - Ticket Pricing Table Details - ->
-                        <div class="ticket-pricing-table-details">
-                            <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-                            <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-                            <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-                            <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-                            <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -965,29 +814,72 @@
                 <div class="col-12">
                     <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
                         <p>Partners &amp; Sponsors</p>
-                        <h4 style="color: #0B1C33">OFFICIAL SPONSOR</h4>
+                        <h4 style="color: #0B1C33">OFFICIAL SPONSORS</h4>
                     </div>
                 </div>
             </div>
 
             <!-- Our Sponsor Row -->
             <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
+                <!-- Tier 1 Sponsor -->
+                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <a href="https://www.linode.com/"><img class="lozad" data-src="img/sponsors/linode.png" alt=""></a>
+                </div>
+                <!-- Tier 1 Sponsor -->
+                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <a href="https://www.devfolio.co/"><img class="lozad" data-src="img/sponsors/devfolio.PNG" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Our Sponsor Row -->            
+            <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
+                <!-- Tier 1 Sponsor -->
+                <div style="padding:60px" class="col-12 col-md-6 col-lg-6 single-sponsor wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <a href="https://www.name.com/"><img class="lozad" data-src="img/sponsors/namedotcom.png" alt=""></a>
+                </div>
+            </div>
+            
+            <!-- Our Sponsor Row -->
+            <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://www.creative-tim.com/"><img class="lozad" data-src="img/sponsors/creative-tim.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://get.tech/"><img class="lozad" data-src="img/sponsors/dot_tech.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://www.mozilla.org/en-US/"><img class="lozad" data-src="img/sponsors/mozilla.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://matic.network/"><img class="lozad" data-src="img/sponsors/matic.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Our Sponsor Row -->
+            <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
 
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://balsamiq.com/"><img src="img/sponsors/balsamiq.png" alt=""></a>
+                    <a href="http://www.wolfram.com/"><img class="lozad" data-src="img/sponsors/wolfram.png" alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://www.linode.com/"><img src="img/sponsors/linode.png" alt=""></a>
+                    <a href="https://balsamiq.com/"><img class="lozad" data-src="img/sponsors/balsamiq.png" alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="http://www.wolfram.com/"><img src="img/sponsors/wolfram.png" alt=""></a>
+                    <a href="https://www.womenwhocode.com/"><img class="lozad" data-src="img/sponsors/womenwhocode.png" alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://www.facebook.com/groups/DevCDelhiNCR/"><img src="img/sponsors/fb-dev.png"
+                    <a href="https://www.facebook.com/groups/DevCDelhiNCR/"><img class="lozad" data-src="img/sponsors/fb-dev.png"
                             alt=""></a>
                 </div>
             </div>
@@ -996,17 +888,48 @@
             <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://www.stickermule.com/supports/hackiiitd19"><img src="img/sponsors/sticker-mule.png"
+                    <a href="https://cloudsploit.com/"><img class="lozad" data-src="img/sponsors/cloudsploit.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://www.stickermule.com/supports/hackiiitd19"><img class="lozad" data-src="img/sponsors/sticker-mule.png"
                             alt=""></a>
                 </div>
                 <!-- Single Sponsor -->
                 <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                    <a href="https://www.hellointern.com/"><img src="img/sponsors/hellointern.png" alt=""></a>
+                    <a href="https://www.tilde.io/"><img class="lozad" data-src="img/sponsors/tilde.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://quiknode.io/"><img class="lozad" data-src="img/sponsors/QuikNode.png" alt=""></a>
+                </div>
+            </div>
+            <!-- Our Sponsor Row -->
+            <div class="row our-sponsor-area d-flex flex-wrap justify-content-center">
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://stickeryou.com/"><img class="lozad" data-src="img/sponsors/stickeryou.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://www.hellointern.com/"><img class="lozad" data-src="img/sponsors/hellointern.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="http://bit.ly/2M8efm7"><img class="lozad" data-src="img/sponsors/challengerocket.png" alt=""></a>
+                </div>
+                <!-- Single Sponsor -->
+                <div class="col-12 col-md-6 col-lg-3 single-sponsor wow fadeInUp" data-wow-delay="300ms">
+                    <a href="https://www.gitkraken.com/"><img class="lozad" data-src="img/sponsors/gitkraken.png" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Our Sponsor And Client Area End -->
+
+    <!-- Our Prizes Area Start -->
+    
+    <!-- Our Prizes Area End -->
 
     <!-- Our Blog Area Start -->
     <section id="mentors" class="our-blog-area bg-img bg-gradient-overlay section-padding-100-60"
@@ -1025,7 +948,7 @@
                     <div class="single-blog-area wow fadeInUp" data-wow-delay="300ms">
                         <!-- Single blog Thumb -->
                         <div class="single-blog-thumb">
-                            <img src="img/mentors/rishabh.jpg" alt="">
+                            <img class="lozad" data-src="img/mentors/rishabh.jpg" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <p class="blog-title">Rishabh Bansal</p>
@@ -1049,7 +972,7 @@
                     <div class="single-blog-area wow fadeInUp" data-wow-delay="300ms">
                         <!-- Single blog Thumb -->
                         <div class="single-blog-thumb">
-                            <img src="img/mentors/suhail.jpg" alt="">
+                            <img class="lozad" data-src="img/mentors/suhail.jpg" alt="">
                         </div>
                         <div class="single-blog-text text-center">
                             <p class="blog-title">Suhail Singh Bains</p>
@@ -1087,21 +1010,21 @@
                 <div class="col-lg-9">
                     <ul id="faq-list" class="faq-ul wow fadeInUp" data-wow-delay="300ms">
                         <li> <a data-toggle="collapse" class="collapsed faq-li" href="#faq1">What is the eligibility
-                                criteria?<i class="zmdi zmdi-plus-circle"></i></a>
+                                criteria?<i class="zmdi zmdi-minus-circle"></i></a>
                             <div id="faq1" class="collapse faq-ans" data-parent="#faq-list">
                                 <p>A team should consist of undergraduates and/or school students from grades 11th/12th.
-                                    At most 4 members are allowed in a team. Lone wolves are welcome too.</p>
+                                    Each team should consist of at least 2 and at most 4 members.</p>
                             </div>
                         </li>
                         <li> <a data-toggle="collapse" href="#faq2" class="collapsed faq-li">How much is the cost for
-                                attending?<i class="zmdi zmdi-plus-circle"></i></a>
+                                attending?<i class="zmdi zmdi-minus-circle"></i></a>
                             <div id="faq2" class="collapse faq-ans" data-parent="#faq-list">
                                 <p>This event is completely free! We’ll provide you with a plethora of resources and
                                     tools to hack with.</p>
                             </div>
                         </li>
                         <li> <a data-toggle="collapse" href="#faq3" class="collapsed faq-li">What should I bring to the
-                                event?<i class="zmdi zmdi-plus-circle"></i></a>
+                                event?<i class="zmdi zmdi-minus-circle"></i></a>
                             <div id="faq3" class="collapse faq-ans" data-parent="#faq-list">
                                 <p>You need to carry your college/school ID Card, laptop, phone, chargers, any sleeping
                                     equipment you might want and a geeky t-shirt!</p>
@@ -1115,29 +1038,58 @@
     <!-- FAQ Area End -->
 
     <!-- Contact Area Start -->
-    <section id="contact" class="contact-our-area bg-img bg-gradient-overlay section-padding-100-0" style="background-image: url(img/bg-img/27.jpg);">
+    <section id="contact" class="contact-our-area bg-img bg-gradient-overlay section-padding-100-0"
+        style="background-image: url(img/bg-img/27.jpg);">
         <div class="container">
             <div class="row">
                 <!-- Heading -->
                 <div class="col-12">
                     <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Have Question?</p>
+                        <p>Have Questions?</p>
                         <h4>Contact us</h4>
                     </div>
                 </div>
             </div>
+            <!-- CONTACT US FIX BY ABHIMANYU DO NOT CHANGE-->
+            <style type="text/css">
+                /*Between 1200px and 768px*/
+                @media screen and (max-width: 1200px) and (min-width: 768px) {
+                    .p-2>p {
+                        font-size: 12px
+                    }
+                }
+
+                /*Less than 380px*/
+                @media screen and (max-width:380px) {
+                    .p-2>p {
+                        font-size: 12px
+                    }
+                }
+
+                /*Less than 320px*/
+                @media screen and (max-width: 320px) {
+                    .p-2>p {
+                        font-size: 10px
+                    }
+                }
+
+                .p-2>p>a {
+                    color: inherit;
+                    font-weight: inherit;
+                }
+            </style>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="row">
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/jha.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/jha.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Abhimanyu Jha</p>
-                                <p>abhimanyu17126@iiitd.ac.in</p>
-                                <p>+91 99900 38337</p>
+                                <p><a href="mailto:abhimanyu17126@iiitd.ac.in">abhimanyu17126@iiitd.ac.in</a></p>
+                                <p><a href="tel:9990038337">+91 99900 38337</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                             <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1151,12 +1103,12 @@
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/amandeep.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/amandeep.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Amandeep Kaur</p>
-                                <p>amandeep18014@iiitd.ac.in</p>
-                                <p>+91 96342 02204</p>
+                                <p><a href="mailto:amandeep18014@iiitd.ac.in">amandeep18014@iiitd.ac.in</a></p>
+                                <p><a href="tel:96342 02204">+91 96342 02204</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                                 <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1170,12 +1122,12 @@
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/ria.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/ria.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Ria Gupta</p>
-                                <p>ria18405@iiitd.ac.in</p>
-                                <p>+91 98911 42167</p>
+                                <p><a href="mailto:ria18405@iiitd.ac.in">ria18405@iiitd.ac.in</a></p>
+                                <p><a href="tel:98911 42167">+91 98911 42167</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                                     <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1192,12 +1144,12 @@
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/shashwat.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/shashwat.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Shashwat Aggarwal</p>
-                                <p>shashwat18097@iiitd.ac.in</p>
-                                <p>+91 88600 85903</p>
+                                <p><a href="mailto:shashwat18097@iiitd.ac.in">shashwat18097@iiitd.ac.in</a></p>
+                                <p><a href="tel:88600 85903">+91 88600 85903</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                                 <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1211,12 +1163,12 @@
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/sidhant.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/sidhant.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Sidhant S Sarkar</p>
-                                <p>sidhant18102@iiitd.ac.in</p>
-                                <p>+91 98105 56335</p>
+                                <p><a href="mailto:sidhant18102@iiitd.ac.in">sidhant18102@iiitd.ac.in</a></p>
+                                <p><a href="tel:98105 56335">+91 98105 56335</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                                     <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1230,12 +1182,12 @@
                         <div class="d-flex single-contact-area wow fadeInUp" data-wow-delay="300ms">
                             <!-- Single Contact Thumb -->
                             <div class="single-contact-thumb p-0">
-                                <img src="img/event-heads/ujjwal1.png" alt="">
+                                <img class="lozad" data-src="img/event-heads/ujjwal.jpg" alt="">
                             </div>
                             <div class="single-contact-text p-2">
                                 <p class="contact-title">Ujjwal Singh</p>
-                                <p>ujjwal18113@iiitd.ac.in</p>
-                                <p>+91 98115 80659</p>
+                                <p><a href="mailto:ujjwal18113@iiitd.ac.in">ujjwal18113@iiitd.ac.in</a></p>
+                                <p><a href="tel:98115 80659">+91 98115 80659</a></p>
                             </div>
                             <!-- <div class="contact-btn">
                                         <a href="https://www.linkedin.com/in/suhailsinghbains/"><i
@@ -1282,8 +1234,10 @@
                                 <a href="https://www.instagram.com/esya_iiitd/"><i class="zmdi zmdi-instagram"></i></a>
                                 <a href="https://esya.iiitd.edu.in/"><i class="zmdi zmdi-globe-alt"></i></a>
                             </div>
-                            <p><a href="Privacy_Policy.pdf" target="_blank">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
-                                    href="Code_of_Conduct.pdf" target="_blank">Code of Conduct</a></p>
+                            <p class="pp-coc"><a href="Privacy_Policy.pdf" target="_blank">Privacy Policy</a> | <a
+                                    href="Code_of_Conduct.pdf" target="_blank">Code of Conduct</a> |
+                                <a href="https://devfolio.co/code-of-conduct" target="_blank" rel="noopener">Devfolio Code of
+                                    Conduct</a></p>
                         </div>
                     </div>
 
@@ -1302,7 +1256,7 @@
                             <p>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Violet</a>
+                                    href="https://colorlib.com" target="_blank" rel="noopener">Violet</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
@@ -1318,20 +1272,26 @@
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <!-- Popper and Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+
+
+
     <!-- All Plugins -->
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-    <!-- BG-Anim -->
-    <!-- <script src="js/bg-anim.js"></script> -->
+    
     <!-- SMOOTH SCROLLING TO LINKS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- Jquery 3 not needed at 2.2.4 is already imported -Abhimanyu -->
     <script>
+        //Scrolling JS
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a:not('.nav-link, .faq-li')").on('click', function (event) {
@@ -1356,6 +1316,37 @@
                 } // End if
             });
         });
+
+        // Devfolio JS
+        document.addEventListener('DOMContentLoaded', function () {
+            let devfolioOptions = {
+                buttonSelector: '#devfolio-apply-now',
+                key: 'hackiiitd',
+            }
+            let script = document.createElement('script');
+            script.src = "https://apply.devfolio.co";
+            document.head.append(script);
+            script.onload = function () {
+                new Devfolio(devfolioOptions);
+            }
+            script.onerror = function () {
+                document.querySelector(devfolioOptions.buttonSelector).addEventListener('click',
+                    function () {
+                        window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions
+                            .key;
+
+                    });
+            }
+        });
+
+        // Lazy Loading Stuff
+        const observer = lozad('.lozad', {
+          loaded: function(el) {
+                // console.log("loaded...")
+                // console.log(el)
+              }
+          });
+          observer.observe();
     </script>
 
 </body>
